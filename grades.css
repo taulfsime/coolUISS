@@ -1,0 +1,21 @@
+.exam_date input[type=date] {
+    display: inline;
+}
+
+.exam_date input[type=date],
+.exam_date:hover label {
+    display: none;
+}
+
+.exam_date:hover input[type=date],
+.exam_date label {
+    display: block;
+}
+
+.exam_date input[type=date] {
+    border: 1px solid black;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}

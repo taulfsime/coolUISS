@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "cool УИСС",
+	"version": "1.4.0",
+	"description": "Добавя функционалности към УИСС системта за студенти на ТУ-София! (https://student.tu-sofia.bg/)",
+	"author": "Кристиан Тодоров",
+	"icons": {
+		"128": "icons/128.png",
+		"16": "icons/16.png"
+	},
+	"permissions": [
+		"storage"
+	],
+	"content_scripts": [
+		{
+		  "matches": [ "https://student.tu-sofia.bg/marks.php", "http://student.tu-sofia.bg/marks.php" ],
+		  "js": [ "grades.js" ],
+		  "css": [ "grades.css" ]
+		},
+		{
+			"matches": [ "https://student.tu-sofia.bg/", "http://student.tu-sofia.bg/" ],
+			"js": [ "login.js" ]
+		},
+		{
+		  "matches": [ "https://student.tu-sofia.bg/*", "http://student.tu-sofia.bg/*" ],
+		  "js": [ "darkTheme.js" ],
+		  "css": [ "darkTheme.css" ],
+		  "run_at": "document_start"
+		}
+	]
+}

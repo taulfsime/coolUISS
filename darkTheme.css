@@ -1,0 +1,23 @@
+.list_table .subtitle {
+	font-size: 11px;
+}
+
+.dark_theme {
+	background-color: #282828;
+	color: white;
+}
+
+.dark_theme > table > tbody > tr:nth-child(1) > td > table > tbody > tr:nth-child(1) > td:nth-child(1) > a > img {
+	border-radius: 10px;
+	filter: invert(1);
+}
+
+.dark_theme .list_table .title {
+	background-color: gray;
+	color: white;
+}
+
+.dark_theme .list_table .subtitle {
+	background-color: darkgray;
+	color: white;
+}
